@@ -8,20 +8,60 @@
 </head>
 <body>
   <header>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-      <polygon fill="white" points="0,100 0,0 100,100"/>
-    </svg>
-    <div class="title-group">
-      <p class="title-level-1">uma seleção de produtos</p>
-      <p class="title-level-2">especial para você</p>
+    <div class="trapezoid"></div>
+    <div class="header-content">
+      <p class="title-small">uma seleção de produtos</p>
+      <p class="title">especial para você</p>
       <p class="subtitle">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
-    </div>
-    <div class="button-group">
-      <button class="header-button">Conheça a Linx</button>
-      <button class="header-button">Ajude o algoritmo</button>
-      <button class="header-button">Seus produtos</button>
-      <button class="header-button">Compartilhe</button>
+      <div class="button-group">
+        <button class="button header-button">Conheça a Linx</button>
+        <button class="button header-button">Ajude o algoritmo</button>
+        <button class="button header-button">Seus produtos</button>
+        <button class="button header-button">Compartilhe</button>
+      </div>
     </div>
   </header>
+  <article class="main">
+    <section class="newsletter-form group">
+      <div class="left-column">
+        <p class="title-small">Ajude o algoritmo a ser mais certeiro</p>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit blandit dui eget elementum. 
+          Sed accumsan quam mattis, tincidunt tortor sit amet, vulputate nibh. Vestibulum facilisis cursus elit, 
+          eu porta massa commodo in. Maecenas at dapibus sapien, in imperdiet urna. Suspendisse potenti. 
+          Duis sed ante a diam condimentum lobortis non eget enim. Donec non interdum velit. 
+          Pellentesque aliquam sodales cursus. Donec efficitur volutpat sollicitudin.
+        </p>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit blandit dui eget elementum. 
+          Sed accumsan quam mattis, tincidunt tortor sit amet, vulputate nibh. Vestibulum facilisis cursus elit, 
+          eu porta massa commodo in. Maecenas at dapibus sapien, in imperdiet urna. Suspendisse potenti. 
+          Duis sed ante a diam condimentum lobortis non eget enim. Donec non interdum velit. 
+          Pellentesque aliquam sodales cursus. Donec efficitur volutpat sollicitudin.
+        </p>
+      </div>
+      <div class="right-column form">
+        <form action="GET">
+          <div class="input-group">
+            <label class="label" for="fullName">Seu nome:</label><br>
+            <input class="input" type="text" name="fullName">
+          </div>
+          <div class="input-group">
+            <label class="label" for="email">E-mail:</label><br>
+            <input class="input" type="text" name="email">
+          </div>
+          <div class="input-group">
+            <label class="label" for="cpf">CPF:</label><br>
+            <input class="input" type="text" name="cpf">
+          </div>
+          <div class="input-group">
+            <label class="radio"><input type="radio" name="gender" value="male"> Masculino</label>
+            <label class="radio"><input type="radio" name="gender" value="female"> Feminino</label>
+          </div>
+          <button class="form-button">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </article>
 </body>
 </html>
