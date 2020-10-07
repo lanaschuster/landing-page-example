@@ -15,8 +15,12 @@ header {
   position: relative;
 }
 
+img {
+  border: 1px solid #707070
+}
+
 .main {
-  max-width: 940px;
+  max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -149,6 +153,74 @@ header {
   border-radius: 3px;
   background-color: #FFFFFF;
   border: 1px solid #707070;
+}
+
+.title-bar {
+  padding: 0;
+  height: 2px;
+  width: 100%;
+  margin-top: 95px;
+  position: relative;
+  text-align: center;
+  border-radius: 1px;
+  background: #707070;
+}
+
+.title-bar span {
+  top: -5px;
+  color: #888888;
+  font-weight: bold;
+  position: relative;
+  padding: 0 8px 8px 8px;
+  background-color: #FFFFFF;
+}
+
+.product-list {
+  margin-top: 50px;
+  color: #888888;
+  text-align: center;
+}
+
+.product-card {
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.product-description {
+  width: 200px;
+  word-wrap: break-word;
+}
+
+.label-medium {
+  padding: 2px;
+  font-size: 14px;
+}
+
+.label-small {
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.label-bold {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.product-button {
+  height: 30px;
+  width: 200px;
+  color: #707070;
+  margin-top: 20px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  border: 1px solid #707070;
+}
+
+.product-section {
+  text-align: center;
 }
 
 /* Responsiveness */
