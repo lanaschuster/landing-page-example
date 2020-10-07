@@ -15,8 +15,20 @@ header {
   position: relative;
 }
 
+footer {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+}
+
+
 img {
   border: 1px solid #707070
+}
+
+footer p {
+  margin: 4px;
 }
 
 .main {
@@ -25,7 +37,7 @@ img {
   margin-right: auto;
 }
 
-.trapezoid {
+.trapezoid-header {
   top: 0;
   left: 0;
   right: 0;
@@ -34,6 +46,20 @@ img {
   height: 100%;
   position: absolute;
   transform: skewY(6deg);
+  background-color: #707070;
+  transform-origin: bottom right;
+}
+
+
+.trapezoid-footer {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: skewY(-6deg);
   background-color: #707070;
   transform-origin: bottom right;
 }
@@ -47,6 +73,16 @@ img {
   position: relative;
   text-align: center;
 }
+
+.footer-content {
+  color: white;
+  font-size: 12px;
+  margin-top: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
 
 .title-small {
   font-size: 20px;
