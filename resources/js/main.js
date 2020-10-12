@@ -20,10 +20,11 @@ const app = Vue.createApp({
         }
          
         this.next = data.nextPage
-
+        
       }).catch(error => {
         console.log(error)
       })
+      
     }
   },
   created() {

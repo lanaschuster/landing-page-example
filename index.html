@@ -18,10 +18,10 @@
         <p class="title">especial para você</p>
         <p class="subtitle">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
         <div class="button-group">
-          <button class="button header-button">Conheça a Linx</button>
-          <button class="button header-button">Ajude o algoritmo</button>
-          <button class="button header-button">Seus produtos</button>
-          <button class="button header-button">Compartilhe</button>
+          <button class="button-group-item">Conheça a Linx</button>
+          <button class="button-group-item">Ajude o algoritmo</button>
+          <button class="button-group-item">Seus produtos</button>
+          <button class="button-group-item">Compartilhe</button>
         </div>
       </div>
     </header>
@@ -81,7 +81,11 @@
             :installments="product.installments.count"
             :installmentvalue="product.installments.value"/>
         </div>
-        <button class="product-button" @click="loadNextPage">Ainda mais produtos aqui!</button>
+        <button 
+          class="load-button" 
+          @click="loadNextPage">
+          Ainda mais produtos aqui!
+        </button>
       </section>
       <section class="centered">
         <div class="title-bar"><span>Compartilhe a novidade</span></div>
@@ -89,13 +93,16 @@
         <form action="POST" class="is-gray centered">
           <div class="inline-input-group">
             <label class="label" for="friendName">Nome do seu amigo:</label><br>
-            <input class="input" type="text" name="friendName">
+            <input class="input" type="text" name="friendName" required>
           </div>
           <div class="inline-input-group">
             <label class="label" for="friendEmail">E-mail:</label><br>
-            <input class="input" type="text" name="friendEmail">
+            <input class="input" type="text" name="friendEmail" 
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]+" 
+              title="E-mail inválido" 
+              required>
           </div>
-          <button class="share-button">Enviar agora</button>
+          <button class="load-button">Enviar agora</button>
         </form>
       </section>
     </article>

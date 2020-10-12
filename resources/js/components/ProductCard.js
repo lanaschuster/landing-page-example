@@ -33,6 +33,12 @@ app.component('product-card', {
       required: true
     }
   },
+  methods: {
+    formatCurrency(value) {
+      let val = (value/1).toFixed(2).replace('.', ',')
+      return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+    }
+  },
   template:
   /*html*/
   `<div class="product-card">
@@ -40,9 +46,9 @@ app.component('product-card', {
     <br>
     <p class="label-medium">{{ name }}</p>
     <p class="label-small product-description">{{ description }}</p>
-    <p class="label-small">De: R$\{{ oldprice }}</p>
-    <p class="label-bold">Por: R$\{{ price }}</p>
-    <p class="label-small">ou {{ installments }}x de R$\{{ installmentvalue }}</p>
+    <p class="label-small">De: R$\{{ formatCurrency(oldprice) }}</p>
+    <p class="label-bold">Por: R$\{{ formatCurrency(price) }}</p>
+    <p class="label-small">ou {{ installments }}x de R$\{{ formatCurrency(installmentvalue) }}</p>
     <button class="product-button">Comprar</button>
   </div>`
 })
