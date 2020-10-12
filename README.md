@@ -5,18 +5,13 @@ Você pode ver uma demonstração [neste link](https://unruffled-stonebraker-f18
 ![Alt text](/screenshot.png)
 
 
-## Sobre o projeto
-
-Segue abaixo a estrutura de arquivos do projeto:
-  .  
-    ├── index.html                   # página principal  
-    └── resources  
-    |    ├── css  
-    |    └── js       
-    |    |    ├── main.js              # Instanciação do Vue  
-    |    |    └── components  
-    |    |        └── ProductCard.js   # Componente Vue para o card de Produto  
-
 ## Como executar
 
-Para o desenvolvimento utilizei a extensão `Live Server` do VSCode.
+O projeto consiste em uma simples página HTML com alguns elementos de estilo e scripts associados. O Vue 3 é adicionado ao projeto via CDN no arquivo `index.html`.  
+
+
+Para iniciar o projeto na sua máquina:  
+1) Instalar o Live Server `npm install -g live-server`;  
+2) Na pasta do projeto executar: `live-server`.
+
+E este iniciará na porta 8080.
